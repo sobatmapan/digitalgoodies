@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DigitalGoodies — Direktori Referensi & Catatan Harian Data</title>
+<meta name="description" content="DigitalGoodies adalah direktori referensi dan catatan ringkas untuk kebutuhan komparasi data, arsip, dan observasi pola secara konsisten.">
+
+<link rel="canonical" href="https://digitalgoodies.store/">
+
+<!-- Fonts (beda dari sebelumnya) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Urbanist:wght@500;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        wine: '#4b0b0b',
+        ember: '#7a0303',
+        night: '#07070b'
+      },
+      fontFamily: {
+        sans: ['Inter','system-ui','sans-serif'],
+        display: ['Urbanist','system-ui','sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+:root{
+  --ember:#7a0303; /* rgb(122,3,3) */
+  --wine:#4b0b0b;
+  --night:#07070b;
+  --card: rgba(255,255,255,.04);
+  --line: rgba(255,255,255,.10);
+}
+body{
+  background:
+    radial-gradient(900px 400px at 20% -10%, rgba(122,3,3,.25), transparent 60%),
+    radial-gradient(900px 400px at 80% 0%, rgba(255,255,255,.06), transparent 60%),
+    var(--night);
+  color: rgba(255,255,255,.92);
+}
+.dg-shell{ max-width: 1100px; margin: 0 auto; }
+.dg-card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.dg-divider{ border-color: var(--line); }
+.dg-tag{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:6px 10px;
+  border:1px solid var(--line);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(0,0,0,.30), rgba(0,0,0,.70)), rgba(122,3,3,.35);
+  font-weight:800;
+  font-size:12px;
+  letter-spacing:.25px;
+}
+.dg-btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius: 10px;
+  background: #fff;
+  color:#111;
+  font-weight:900;
+}
+.dg-btn:hover{ text-decoration: underline; }
+blockquote{
+  margin:12px 0;
+  padding:10px 12px;
+  border-left: 4px solid var(--ember);
+  background: rgba(0,0,0,.18);
+  border-radius: 10px;
+  font-weight:700;
+  color: rgba(255,255,255,.92);
+}
+.links a{
+  display:block;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(0,0,0,.18);
+  color: rgba(255,255,255,.90);
+  font-weight:800;
+  text-decoration:none;
+}
+.links a:hover{
+  border-color: rgba(255,255,255,.18);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.small-note{ color: rgba(255,255,255,.70); font-size:12px; }
+</style>
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"DigitalGoodies",
+  "url":"https://digitalgoodies.store/",
+  "description":"Direktori referensi dan catatan ringkas untuk komparasi data dan observasi pola."
+}
+</script>
+
+</head>
+<body class="font-sans">
+
+<header class="border-b dg-divider">
+  <div class="dg-shell px-6 py-12">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div>
+        <div class="dg-tag">DIGITALGOODIES • DIRECTORY</div>
+        <h1 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight mt-4">
+          Digital<span class="text-ember">Goodies</span>
+        </h1>
+        <p class="text-sm text-white/75 mt-3 max-w-2xl">
+          Direktori referensi + catatan harian berbasis data untuk membantu cek silang, arsip, dan dokumentasi ringan.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a class="dg-btn" href="#referensi">Lihat Referensi</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="dg-shell px-6 py-14">
+
+  <!-- Artikel berbeda -->
+  <section class="dg-card p-6 md:p-8">
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold mb-4">
+      Catatan Praktis: Cara Merapikan Referensi Data
+    </h2>
+
+    <p class="text-sm text-white/75 mb-4">
+      Banyak orang mengumpulkan link dan sumber data, tapi sering hilang saat dibutuhkan.
+      DigitalGoodies berfungsi sebagai “bookmark hidup”: ringkas, konsisten, dan mudah dicek ulang.
+    </p>
+
+    <blockquote>
+      <p>Yang penting bukan banyaknya sumber, tapi konsistensi membandingkan dan mencatat.</p>
+    </blockquote>
+
+    <ul class="mt-5 grid md:grid-cols-3 gap-3 text-sm">
+      <li class="dg-card p-4">
+        <div class="font-extrabold">1) Kunci Format</div>
+        <div class="text-white/70 mt-1">Gunakan pola judul & kategori yang sama untuk tiap sumber.</div>
+      </li>
+      <li class="dg-card p-4">
+        <div class="font-extrabold">2) Cek Silang</div>
+        <div class="text-white/70 mt-1">Bandingkan hasil antar-sumber untuk mengurangi bias.</div>
+      </li>
+      <li class="dg-card p-4">
+        <div class="font-extrabold">3) Arsip Harian</div>
+        <div class="text-white/70 mt-1">Catat tanggal & ringkasan singkat agar mudah dilacak.</div>
+      </li>
+    </ul>
+
+    <p class="small-note mt-6">
+      Catatan: Halaman ini bersifat direktori referensi dan dokumentasi ringan.
+    </p>
+  </section>
+
+  <!-- Backlink (sama) -->
+  <section id="referensi" class="mt-14">
+    <div class="flex items-end justify-between gap-4 mb-6">
+      <h2 class="font-display text-2xl md:text-3xl font-extrabold">Referensi Data & Prediksi</h2>
+      <div class="small-note">Update berkala • koleksi referensi</div>
+    </div>
+
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 links text-sm">
+      <li><a href="https://datahklotto.us/" target="_blank" rel="noopener">Data HK Lotto</a></li>
+      <li><a href="http://178.128.52.7/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+      <li><a href="https://pafiairseruk.org/" target="_blank" rel="noopener">Data HK</a></li>
+      <li><a href="http://178.128.89.94/" target="_blank" rel="noopener">Data SGP</a></li>
+      <li><a href="https://pafitanglad.org/" target="_blank" rel="noopener">Data SDY</a></li>
+      <li><a href="https://lamarsalaplayadegandia.com/" target="_blank" rel="noopener">Data HK</a></li>
+      <li><a href="http://159.223.35.146/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+      <li><a href="https://wholesalejerseys4sale.com/" target="_blank" rel="noopener">Prediksi Keluaran</a></li>
+      <li><a href="https://pafibenermeriahkabupaten.org/" target="_blank" rel="noopener">Prediksi Jitu</a></li>
+      <li><a href="http://178.128.116.128/" target="_blank" rel="noopener">Prediksi SDY</a></li>
+      <li><a href="https://prediksihkpools.net/" target="_blank" rel="noopener">Prediksi HK</a></li>
+      <li><a href="http://178.128.215.158/" target="_blank" rel="noopener">Angkanet</a></li>
+      <li><a href="http://178.128.21.45/" target="_blank" rel="noopener">Angkanet Result</a></li>
+      <li><a href="https://pafipcgunungkidulkab.org/" target="_blank" rel="noopener">Data HK 6D</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="border-t dg-divider">
+  <div class="dg-shell px-6 py-10 text-center">
+    <div class="text-xs text-white/65">© 2026 digitalgoodies.store — Directory & Notes</div>
+  </div>
+</footer>
+
+</body>
+</html>
